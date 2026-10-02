@@ -1,0 +1,27 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Machine learning generated files
+*.pkl
+*.joblib
+*.h5
+*.keras
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
