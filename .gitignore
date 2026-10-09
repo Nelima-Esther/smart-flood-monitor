@@ -20,6 +20,10 @@ env/
 *.h5
 *.keras
 
+#Include the trained V2 model required by the API
+!ml-service/models/random_forest_v2.joblib
+!ml-service/models/feature_config_v2.joblib
+
 # IDE / OS
 .vscode/
 .idea/
