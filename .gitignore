@@ -16,6 +16,7 @@ env/
 
 # Machine learning generated files
 *.pkl
+!ml-service/models/random_forest_flood_model.pkl
 *.joblib
 *.h5
 *.keras

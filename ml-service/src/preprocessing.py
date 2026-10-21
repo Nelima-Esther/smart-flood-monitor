@@ -33,8 +33,8 @@ def load_risk_data(csv_path=DEFAULT_DATA_PATH):
     frame = frame.dropna(subset=list(required)).copy()
     for feature in RISK_FEATURES:
         frame[feature] = pd.to_numeric(frame[feature], errors="raise")
-        if (frame[feature] < 0).any():
-            raise ValueError(f"'{feature}' values must be non-negative.")
+    if feature != "rainfall_change_mm" and (frame[feature] < 0).any():
+        raise ValueError(f"'{feature}' values must be non-negative.")
     frame[AREA_FEATURE] = frame[AREA_FEATURE].astype(str)
     frame[TARGET] = frame[TARGET].astype(str).str.upper()
     unexpected = sorted(set(frame[TARGET]) - set(RISK_CLASSES))
