@@ -6,7 +6,7 @@ An incremental final-year project scaffold for flood monitoring and alerts.
 
 - Frontend: Preact and JavaScript, served and built with Vite
 - Backend: Node.js and Express
-- Database: MySQL
+- Database: SQLite
 - ML microservice: Python and Flask
 
 ## Project structure
@@ -15,7 +15,7 @@ An incremental final-year project scaffold for flood monitoring and alerts.
 frontend/    Preact user interface
 backend/     Express API
 ml-service/  Flask microservice
-database/    MySQL schema
+database/    SQLite
 ```
 
 ## Getting started
