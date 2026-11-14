@@ -1,6 +1,6 @@
 # Smart Flood Monitoring and Automated Alert System
 
-A Nairobi flood-monitoring dashboard with a Preact frontend, an Express API, SQLite storage, and a Python machine-learning service.
+A Nairobi flood-monitoring dashboard with a Preact frontend, an Express API, SQLite storage and a Python machine-learning service.
 
 ## Technology stack
 
