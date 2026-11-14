@@ -15,7 +15,6 @@ A Nairobi flood-monitoring dashboard with a Preact frontend, an Express API, SQL
 frontend/    Preact user interface
 backend/     Express API and SQLite database setup
 ml-service/  Flask machine-learning service and model files
-database/    Legacy SQL schema; not used by the current app
 ```
 
 ## Getting started
@@ -65,6 +64,6 @@ Then set `ML_SERVICE_URL=http://127.0.0.1:5000` in `backend/.env` and restart th
 
 > **Model note:** Predictions depend on the model files and input values. The project documentation identifies some training data as synthetic/demo data, so model results should not be treated as official flood warnings.
 
-## Database note
+## Database
 
-`database/schema.sql` is a legacy MySQL reference and is not used by the current application. The Express backend initializes the SQLite schema in `backend/src/database.js` when it starts.
+The Express backend initializes its SQLite schema in `backend/src/database.js`. It creates `backend/database/floodwatch.db` the first time the backend starts. The database file is local runtime data and is not committed to Git.
