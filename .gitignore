@@ -30,3 +30,9 @@ env/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Local application data and machine-specific artifacts
+*.db
+Microsoft/
+backend/src/server.js.backup
+backend/test-africastalking.js
